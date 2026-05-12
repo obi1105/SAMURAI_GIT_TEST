@@ -21,3 +21,19 @@ window.addEventListener("scroll", () => {
         }
     });
 });
+
+const text = "MY PROFILE";
+const title = document.getElementById('title1');
+
+
+let index = 0;
+
+function typing () {
+    if (index < text.length) {
+        title.textContent += text[index];
+        index++;
+        setTimeout(typing,150);
+    }
+}
+
+typing();
