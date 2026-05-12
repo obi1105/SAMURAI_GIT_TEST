@@ -30,9 +30,9 @@ let index = 0;
 
 function typing () {
     if (index < text.length) {
-        title.textContent += text[index];
+        title.textContent += text[index]; //次の文字を1文字ずつ足していく
         index++;
-        setTimeout(typing,150);
+        setTimeout(typing,150); //150ミリ秒後に文字追加
     }
 }
 
